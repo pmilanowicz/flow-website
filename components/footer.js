@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     logoBox: {
         marginTop: -40,
         [theme.breakpoints.down('sm')]: {
-            marginTop: theme.spacing(-8)
+            display: "none"
         }
     }
 }));

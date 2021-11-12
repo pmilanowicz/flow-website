@@ -24,13 +24,13 @@ export default function PartnersBar() {
             </Grid>
 
             <Grid container direction="row" justifyItems="center" justifyContent="center" className={classes.gridContainer}>
-                <Grid item sm={4} xs={12} padding={2} textAlign="center">
+                <Grid item sm={4} xs={6} padding={2} textAlign="center">
                     <Image src={VrImage} width={150} height={150} />
                 </Grid>
-                <Grid item sm={4} xs={12} padding={2} textAlign="center">
+                <Grid item sm={4} xs={6} padding={2} textAlign="center">
                     <Image src={VrImage} width={150} height={150} />
                 </Grid>
-                <Grid item sm={4} xs={12} padding={2} textAlign="center">
+                <Grid item sm={4} xs={6} padding={2} textAlign="center">
                     <Image src={VrImage} width={150} height={150} />
                 </Grid>
             </Grid>

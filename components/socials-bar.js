@@ -8,10 +8,7 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
     iconButton: {
-        paddingRight: theme.spacing(0.5),
-        "&:last-child": {
-            paddingRight: 0
-        }
+        paddingRight: 0
     }
 }));
 

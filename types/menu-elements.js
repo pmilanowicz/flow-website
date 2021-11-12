@@ -1,13 +1,13 @@
 import PeopleIcon from '@mui/icons-material/People';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-import BookIcon from '@mui/icons-material/Book';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import WavesIcon from '@mui/icons-material/Waves';
+import CallIcon from '@mui/icons-material/Call';
 
 export const MenuElements = [
     {
         title: 'O nas',
         href: '/o-nas',
-        iconComponent: BookIcon
+        iconComponent: WavesIcon
     },
     {
         title: 'Drużyna',
@@ -22,6 +22,6 @@ export const MenuElements = [
     {
         title: 'Kontakt',
         href: '/kontakt',
-        iconComponent: AlternateEmailIcon
+        iconComponent: CallIcon
     }
 ];
