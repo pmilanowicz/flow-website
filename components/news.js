@@ -1,6 +1,6 @@
 import { Divider, Grid, Typography } from '@mui/material';
 import MediaCard from '../components/media-card';
-import NewsFlowMistrzem from '../public/images/news-flow-mistrzem.png'
+import NewsFlowMistrzem from '../public/images/news-flow-mistrzem.jpeg'
 
 export default function News() {
     return (
