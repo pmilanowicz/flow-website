@@ -21,12 +21,10 @@ export default function DrawerComponent() {
 
     const renderMenuIcon = (component) => {
         const IconComponent = component;
-        console.log(component)
 
         return <IconComponent fontSize="medium" color="primary" />;
     };
 
-    console.log(MenuElements);
     return (
         <Box>
             <Drawer
@@ -47,8 +45,8 @@ export default function DrawerComponent() {
 
                     <Divider />
 
-                    {MenuElements.map(element => (
-                        <ListItem button onClick={() => setOpenDrawer(false)}>
+                    {MenuElements.map((element, index) => (
+                        <ListItem key={index} button onClick={() => setOpenDrawer(false)}>
                             <ListItemIcon>
                                 {renderMenuIcon(element.iconComponent)}
                             </ListItemIcon>

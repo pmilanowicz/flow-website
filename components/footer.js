@@ -11,7 +11,17 @@ const useStyles = makeStyles((theme) => ({
     gridContainer: {
         backgroundColor: theme.palette.primary.main,
         color: theme.palette.secondary.main,
-        padding: 40,
+        paddingRight: theme.spacing(2),
+        paddingTop: theme.spacing(2),
+        paddingBottom: theme.spacing(2),
+        paddingLeft: theme.spacing(2),
+        marginTop: -80
+    },
+    logoBox: {
+        marginTop: -40,
+        [theme.breakpoints.down('sm')]: {
+            marginTop: theme.spacing(-8)
+        }
     }
 }));
 
@@ -20,29 +30,31 @@ export default function Footer() {
 
     return (
         <Grid container padding={0} sx={{ mt: 5 }}>
+            <Grid item xs={12} textAlign="center">
+                <Box className={classes.logoBox}>
+                    <Image src={FlowLogo} width="150" height="150" />
+                </Box>
+            </Grid>
             <Grid container direction="row" justifyItems="center" justifyContent="center" className={classes.gridContainer}>
-                <Grid item xs={4} textAlign="left" spacing="0">
-                    <Typography>
-                        <List>
-                            {MenuElements.map(element => (
-                                <ListItem sx={{ paddingY: 0 }}>
-                                    <NextLink href={element.href} passHref>
-                                        <Link color="inherit" underline="always">{element.title}</Link>
-                                    </NextLink>
-                                </ListItem>
-                            ))}
-                            <ListItem>
-                                <Link color="inherit" underline="hover" href="#">Do góry &uarr;</Link>
+                <Grid item xs={6} textAlign="left">
+                    <List>
+                        {MenuElements.map((element, index) => (
+                            <ListItem key={index} sx={{ paddingY: 0, paddingX: 0 }}>
+                                <NextLink href={element.href} passHref>
+                                    <Link color="inherit" underline="always">
+                                        <Typography>{element.title}</Typography>
+                                    </Link>
+                                </NextLink>
                             </ListItem>
-                        </List>
-                    </Typography>
+                        ))}
+                        <ListItem sx={{ marginTop: 2, paddingX: 0 }}>
+                            <Link color="inherit" underline="always" href="#">
+                                <Typography>Do góry &uarr;</Typography>
+                            </Link>
+                        </ListItem>
+                    </List>
                 </Grid>
-                <Grid item xs={4} textAlign="center">
-                    <Box sx={{ mt: -15 }}>
-                        <Image src={FlowLogo} width="200" height="200" />
-                    </Box>
-                </Grid>
-                <Grid item xs={4} textAlign="right">
+                <Grid item xs={6} textAlign="right">
                     <SocialsBarComponent />
                     <Grid item xs={12}>
                         <Typography variant="body1">
@@ -54,9 +66,11 @@ export default function Footer() {
                         <Typography variant="body2">
                             51-672 Wrocław
                         </Typography>
-                        <Link href="mailto:flowwroclaw@gmail.com" color="secondary">
-                            <Typography variant="body2">flowwroclaw@gmail.com</Typography>
-                        </Link>
+                        <Typography variant="body2">
+                            <Link href="mailto:flowwroclaw@gmail.com" color="secondary">
+                                flowwroclaw@gmail.com
+                            </Link>
+                        </Typography>
                     </Grid>
                 </Grid>
             </Grid>
