@@ -5,6 +5,8 @@ import theme from '../components/theme-provider';
 import Navbar from '../components/navbar';
 import MainImage from '../components/main-image';
 import News from '../components/news';
+import PartnersBar from '../components/partners-bar';
+import Footer from '../components/footer';
 
 export default function Home() {
   return (
@@ -18,10 +20,11 @@ export default function Home() {
         <Navbar />
         <MainImage />
         <News />
+        <PartnersBar />
       </main>
 
       <footer>
-        {/* Footer here */}
+        <Footer />
       </footer>
     </ThemeProvider>
   )
