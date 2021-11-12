@@ -9,15 +9,15 @@ export default function Navbar() {
   return (
     <AppBar position="sticky">
       <Grid container paddingX={2} paddingY={1}>
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <DrawerMenuComponent />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           <Box textAlign="center">
             <Image src={FlowLogo} priority layout="fixed" width={50} height={50} />
           </Box>
         </Grid>
-        <Grid item xs={4} textAlign="right">
+        <Grid item xs={5} textAlign="right">
           <SocialsBar />
         </Grid>
       </Grid>
