@@ -7,25 +7,25 @@ import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import { Box } from '@mui/system';
 
-export default function ImgMediaCard() {
+export default function ImgMediaCard({ imgSrc, header, body, href }) {
     return (
         <Box display="flex" alignItems="center" justifyContent="center">
-            <Card sx={{ maxWidth: 345 }}>
-                <CardMedia sx={{ height: 140 }}>
+            <Card sx={{ width: "100%"}}>
+                <CardMedia>
                     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-                        <Image src="https://mui.com/static/images/cards/contemplative-reptile.jpg" layout="fill" objectFit="cover" />
+                        <Image src={imgSrc} layout="intrinsic" objectFit="cover" />
                     </div>
                 </CardMedia>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Jaszczurki
+                        {header}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Grupa gadów łuskonośnych obejmująca czworonożne lub beznogie zwierzęta lądowe o wydłużonym ciele, oczach posiadających powieki, mocnych szczękach i diapsydalnej czaszce
+                        {body}
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button size="small" variant="contained" color="primary">Pokaż więcej</Button>
+                    <Button size="small" variant="contained" color="primary" href={href} target="_blank">Pokaż więcej</Button>
                 </CardActions>
             </Card>
         </Box>
