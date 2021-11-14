@@ -1,16 +1,15 @@
-
 import Head from 'next/head'
-import { ThemeProvider } from '@mui/system';
-import theme from '../components/theme-provider';
+import Theme from '../utils/theme';
 import Navbar from '../components/navbar';
 import MainImage from '../components/main-image';
 import News from '../components/news';
 import PartnersBar from '../components/partners-bar';
 import Footer from '../components/footer';
+import FlowBanner from '../public/images/homepage.png';
 
 export default function Home() {
   return (
-    <ThemeProvider theme={theme}>
+    <Theme>
       <Head>
         <title>Flow Wrocław - Ultimate Frisbee Team</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,7 +17,7 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <MainImage />
+        <MainImage imgSrc={FlowBanner}/>
         <News />
         <PartnersBar />
       </main>
@@ -26,6 +25,6 @@ export default function Home() {
       <footer>
         <Footer />
       </footer>
-    </ThemeProvider>
+    </Theme>
   )
 }
