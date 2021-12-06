@@ -6,6 +6,7 @@ import News from '../components/news';
 import PartnersBar from '../components/partners-bar';
 import Footer from '../components/footer';
 import FlowBanner from '../public/images/homepage.png';
+// import MainBar from '../components/main-bar';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Navbar />
         <MainImage imgSrc={FlowBanner}/>
+        {/* <MainBar /> */}
         <News />
         <PartnersBar />
       </main>
