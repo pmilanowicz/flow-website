@@ -32,7 +32,11 @@ export default function Footer() {
         <Grid container padding={0} sx={{ mt: 5 }}>
             <Grid item xs={12} textAlign="center">
                 <Box className={classes.logoBox}>
-                    <Image src={FlowLogo} width="150" height="150" />
+                    <NextLink href="/">
+                        <a>
+                            <Image src={FlowLogo} width="150" height="150" />
+                        </a>
+                    </NextLink>
                 </Box>
             </Grid>
             <Grid container direction="row" justifyItems="center" justifyContent="center" className={classes.gridContainer}>

@@ -2,6 +2,7 @@ import { Divider, Grid, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import Image from 'next/image';
 import VrImage from '../public/images/vr.png';
+import DlaStudentaImage from '../public/images/dlastudenta.png';
 
 const useStyles = makeStyles((theme) => ({
     gridContainer: {
@@ -24,14 +25,15 @@ export default function PartnersBar() {
             </Grid>
 
             <Grid container direction="row" justifyItems="center" justifyContent="center" className={classes.gridContainer}>
-                <Grid item sm={4} xs={6} padding={2} textAlign="center">
-                    <Image src={VrImage} width={150} height={150} />
+                <Grid item xs={6} padding={2} textAlign="center">
+                    <a href="http://www.vr-ultimate.com/" target="_blank">
+                        <Image src={VrImage} width={139} height={139} />
+                    </a>
                 </Grid>
-                <Grid item sm={4} xs={6} padding={2} textAlign="center">
-                    <Image src={VrImage} width={150} height={150} />
-                </Grid>
-                <Grid item sm={4} xs={6} padding={2} textAlign="center">
-                    <Image src={VrImage} width={150} height={150} />
+                <Grid item xs={6} padding={2} textAlign="center">
+                    <a href="https://wroclaw.dlastudenta.pl/" target="_blank">
+                        <Image src={DlaStudentaImage} height={139} />
+                    </a>
                 </Grid>
             </Grid>
         </Grid>

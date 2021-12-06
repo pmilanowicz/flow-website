@@ -46,14 +46,14 @@ export default function DrawerComponent() {
                     <Divider />
 
                     {MenuElements.map((element, index) => (
-                        <ListItem key={index} button onClick={() => setOpenDrawer(false)}>
-                            <ListItemIcon>
-                                {renderMenuIcon(element.iconComponent)}
-                            </ListItemIcon>
-                            <Link href={element.href} passHref>
+                        <Link href={element.href} passHref>
+                            <ListItem key={index} button onClick={() => setOpenDrawer(false)}>
+                                <ListItemIcon>
+                                    {renderMenuIcon(element.iconComponent)}
+                                </ListItemIcon>
                                 <ListItemText>{element.title}</ListItemText>
-                            </Link>
-                        </ListItem>
+                            </ListItem>
+                        </Link>
                     ))}
                 </List>
             </Drawer>
