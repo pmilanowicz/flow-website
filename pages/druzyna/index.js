@@ -4,13 +4,13 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import { Divider, Grid, Typography } from '@mui/material';
 import MainImage from '../../components/main-image';
-import ImageSrc from '../../public/images/kontakt.jpg';
+import ImageSrc from '../../public/images/druzyna.png';
 
 export default function Home() {
   return (
     <Theme>
       <Head>
-        <title>Flow Wrocław - Ultimate Frisbee Team - Kontakt</title>
+        <title>Flow Wrocław - Ultimate Frisbee Team - Drużyna</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,7 +20,7 @@ export default function Home() {
         <Grid container padding={3}>
           <Grid item xs={12} padding={2} textAlign="left">
             <Typography variant="h3" color="primary">
-              Kontakt
+              Drużyna
             </Typography>
             <Divider />
           </Grid>

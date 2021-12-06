@@ -4,7 +4,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import { Divider, Grid, Typography } from '@mui/material';
 import MainImage from '../../components/main-image';
-import ONas from '../../public/images/o-nas.png';
+import ImageSrc from '../../public/images/partnerzy.jpg';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <MainImage imgSrc={ONas} />
+        <MainImage imgSrc={ImageSrc} />
         <Grid container padding={3}>
           <Grid item xs={12} padding={2} textAlign="left">
             <Typography variant="h3" color="primary">
