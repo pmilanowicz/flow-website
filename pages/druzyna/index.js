@@ -5,8 +5,14 @@ import Footer from '../../components/footer';
 import { Divider, Grid, Typography } from '@mui/material';
 import MainImage from '../../components/main-image';
 import ImageSrc from '../../public/images/druzyna.png';
+import { PlayerMediaCard } from '../../components/player-media-card';
+import roster from '../../utils/roster.json';
+
+const sortedRoster = roster.players.sort((a, b) => a.number - b.number);
 
 export default function Home() {
+  
+
   return (
     <Theme>
       <Head>
@@ -25,29 +31,11 @@ export default function Home() {
             <Divider />
           </Grid>
 
-          <Grid item xs={12} padding={2}>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} padding={2}>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} padding={2}>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} padding={2}>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </Grid>
+          {sortedRoster.map((player) =>
+            <Grid item xs={3} padding={2}>
+              <PlayerMediaCard {...player} />
+            </Grid>
+          )}
         </Grid>
       </main>
 
