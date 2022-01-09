@@ -6,6 +6,7 @@
             "position": "handler",
             "number": 15,
             "yearOfJoining": 2013,
+            "yearOfBirth": 1989,
             "funFact": "Nic śmiesznego",
             "imgSrc": "kuba-wrobel.jpeg"
         },
@@ -15,6 +16,7 @@
             "position": "handler/cutter",
             "number": 19,
             "yearOfJoining": 2011,
+            "yearOfBirth": 1990,
             "funFact": "Zwą mnie wujem",
             "imgSrc": "kuba-wrobel.jpeg"
         },
@@ -24,6 +26,7 @@
             "position": "cutter",
             "number": 99,
             "yearOfJoining": 2013,
+            "yearOfBirth": 1989,
             "funFact": "Powiedz mi Krzysiu jak mam zyć",
             "imgSrc": "kuba-wrobel.jpeg"
         },
@@ -33,6 +36,7 @@
             "position": "cutter",
             "number": 38,
             "yearOfJoining": 2018,
+            "yearOfBirth": 2003,
             "funFact": "Lubię placki",
             "imgSrc": "kuba-wrobel.jpeg"
         }

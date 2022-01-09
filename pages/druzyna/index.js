@@ -31,8 +31,8 @@ export default function Home() {
             <Divider />
           </Grid>
 
-          {sortedRoster.map((player) =>
-            <Grid item xs={12} sm={6} md={3} padding={2}>
+          {sortedRoster.map((player, index) =>
+            <Grid key={index} item xs={12} sm={6} md={3} padding={2}>
               <PlayerMediaCard {...player} />
             </Grid>
           )}

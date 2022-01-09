@@ -15,7 +15,10 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: theme.spacing(2),
         paddingBottom: theme.spacing(2),
         paddingLeft: theme.spacing(2),
-        marginTop: -80
+        marginTop: -80,
+        [theme.breakpoints.down('sm')]: {
+            marginTop: 0,
+        }
     },
     logoBox: {
         marginTop: -40,
@@ -45,14 +48,14 @@ export default function Footer() {
                         {MenuElements.map((element, index) => (
                             <ListItem key={index} sx={{ paddingY: 0, paddingX: 0 }}>
                                 <NextLink href={element.href} passHref>
-                                    <Link color="inherit" underline="always">
+                                    <Link color="inherit" underline="hover">
                                         <Typography>{element.title}</Typography>
                                     </Link>
                                 </NextLink>
                             </ListItem>
                         ))}
                         <ListItem sx={{ marginTop: 2, paddingX: 0 }}>
-                            <Link color="inherit" underline="always" href="#">
+                            <Link color="inherit" underline="hover" href="#">
                                 <Typography>Do góry &uarr;</Typography>
                             </Link>
                         </ListItem>
