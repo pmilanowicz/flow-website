@@ -25,46 +25,46 @@ export const PlayerMediaCard = ({ imgSrc, name, nickname, number, position, year
                     </Typography>
 
                     <Grid container>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="caption">Pseudonim</Typography>
                         </Grid>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="button">{nickname}</Typography>
                         </Grid>
                     </Grid>
 
                     <Grid container>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="caption">Wiek</Typography>
                         </Grid>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="button">{convertYearsToString(age)}</Typography>
                         </Grid>
                     </Grid>
 
                     <Grid container>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="caption">Pozycja</Typography>
                         </Grid>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="button">{position}</Typography>
                         </Grid>
                     </Grid>
 
                     <Grid container>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="caption">Numer</Typography>
                         </Grid>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="button">{number}</Typography>
                         </Grid>
                     </Grid>
 
                     <Grid container>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="caption">Staż we Flow</Typography>
                         </Grid>
-                        <Grid item sm={6}>
+                        <Grid item xs={6}>
                             <Typography variant="button">{convertYearsToString(yearsOfPlaying)}</Typography>
                         </Grid>
                     </Grid>

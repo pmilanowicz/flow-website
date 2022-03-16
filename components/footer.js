@@ -43,7 +43,7 @@ export default function Footer() {
                 </Box>
             </Grid>
             <Grid container direction="row" justifyItems="center" justifyContent="center" className={classes.gridContainer}>
-                <Grid item xs={6} textAlign="left">
+                <Grid item xs={6} textAlign="left" padding={2}>
                     <List>
                         {MenuElements.map((element, index) => (
                             <ListItem key={index} sx={{ paddingY: 0, paddingX: 0 }}>
@@ -61,7 +61,7 @@ export default function Footer() {
                         </ListItem>
                     </List>
                 </Grid>
-                <Grid item xs={6} textAlign="right">
+                <Grid item xs={6} textAlign="right" padding={2}>
                     <SocialsBarComponent />
                     <Grid item xs={12}>
                         <Typography variant="body1">
