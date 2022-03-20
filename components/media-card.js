@@ -13,7 +13,7 @@ export default function ImgMediaCard({ imgSrc, header, body, href }) {
             <Card sx={{ width: "100%"}}>
                 <CardMedia>
                     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-                        <Image src={imgSrc} layout="intrinsic" objectFit="cover" />
+                        <Image src={require(`../public/images/news/${imgSrc}`)} layout="intrinsic" objectFit="cover" />
                     </div>
                 </CardMedia>
                 <CardContent>

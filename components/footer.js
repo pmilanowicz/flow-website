@@ -1,4 +1,4 @@
-import { Grid, List, Link, ListItem, ListItemText, Typography } from "@mui/material";
+import { Grid, List, Link, ListItem, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import SocialsBarComponent from "./socials-bar";
 import FlowLogo from '../public/images/flow.png';
@@ -8,22 +8,13 @@ import { Box } from "@mui/system";
 import { MenuElements } from "../types/menu-elements";
 
 const useStyles = makeStyles((theme) => ({
-    gridContainer: {
-        backgroundColor: theme.palette.primary.main,
-        color: theme.palette.secondary.main,
-        paddingRight: theme.spacing(2),
-        paddingTop: theme.spacing(2),
-        paddingBottom: theme.spacing(2),
-        paddingLeft: theme.spacing(2),
-        marginTop: -80
-    },
     logoBox: {
         marginTop: -40,
         [theme.breakpoints.down('sm')]: {
             display: "none"
         }
     }
-}));
+}, { name: 'MuiFooterComponent' }));
 
 export default function Footer() {
     const classes = useStyles();
@@ -39,8 +30,8 @@ export default function Footer() {
                     </NextLink>
                 </Box>
             </Grid>
-            <Grid container direction="row" justifyItems="center" justifyContent="center" className={classes.gridContainer}>
-                <Grid item xs={6} textAlign="left">
+            <Grid container direction="row" justifyItems="center" justifyContent="center" padding={2} color="white" backgroundColor="#1e3356" marginTop={{ sm: 0, md: "-80px" }}>
+                <Grid item xs={6} textAlign="left" padding={2}>
                     <List>
                         {MenuElements.map((element, index) => (
                             <ListItem key={index} sx={{ paddingY: 0, paddingX: 0 }}>
@@ -58,7 +49,7 @@ export default function Footer() {
                         </ListItem>
                     </List>
                 </Grid>
-                <Grid item xs={6} textAlign="right">
+                <Grid item xs={6} textAlign="right" padding={2}>
                     <SocialsBarComponent />
                     <Grid item xs={12}>
                         <Typography variant="body1">
