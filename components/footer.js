@@ -36,14 +36,14 @@ export default function Footer() {
                         {MenuElements.map((element, index) => (
                             <ListItem key={index} sx={{ paddingY: 0, paddingX: 0 }}>
                                 <NextLink href={element.href} passHref>
-                                    <Link color="inherit" underline="always">
+                                    <Link color="inherit" underline="hover">
                                         <Typography>{element.title}</Typography>
                                     </Link>
                                 </NextLink>
                             </ListItem>
                         ))}
                         <ListItem sx={{ marginTop: 2, paddingX: 0 }}>
-                            <Link color="inherit" underline="always" href="#">
+                            <Link color="inherit" underline="hover" href="#">
                                 <Typography>Do góry &uarr;</Typography>
                             </Link>
                         </ListItem>

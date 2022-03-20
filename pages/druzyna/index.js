@@ -26,13 +26,13 @@ export default function Home() {
         <Grid container padding={3}>
           <Grid item xs={12} padding={2} textAlign="left">
             <Typography variant="h3" color="primary">
-              Zawodnicy
+              Poznaj naszych zawodników
             </Typography>
             <Divider />
           </Grid>
 
-          {sortedRoster.map((player) =>
-            <Grid item xs={3} padding={2}>
+          {sortedRoster.map((player, index) =>
+            <Grid key={index} item xs={12} sm={6} md={3} padding={2}>
               <PlayerMediaCard {...player} />
             </Grid>
           )}

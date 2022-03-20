@@ -78,11 +78,27 @@ export const PlayerMediaCard = ({ imgSrc, name, nickname, number, position, year
                             <Typography variant="caption" sx={{ mr: 2 }}>Staż we Flow</Typography>
                         </Grid>
                         <Grid item xs={6}>
-                            <Typography variant="button">{yearsOfPlaying} lat</Typography>
+                            <Typography variant="button">{convertYearsToString(yearsOfPlaying)}</Typography>
                         </Grid>
                     </Grid>
                 </CardContent>
             </Card>
         </Box>
     );
+}
+
+const convertYearsToString = (years) => {
+    if (years <= 0) {
+        return '< 1 rok';
+    }
+
+    if (years === 1) {
+        return '1 rok';
+    }
+
+    if (years > 1 && years < 5) {
+        return `${years} lata`;
+    }
+
+    return `${years} lat`;
 }
