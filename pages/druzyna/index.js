@@ -6,7 +6,7 @@ import { Divider, Grid, Typography } from '@mui/material';
 import MainImage from '../../components/main-image';
 import ImageSrc from '../../public/images/druzyna.png';
 import { PlayerMediaCard } from '../../components/player-media-card';
-import roster from '../../utils/roster.json';
+import roster from '../../types/roster.json';
 
 const sortedRoster = roster.players.sort((a, b) => a.number - b.number);
 
@@ -26,7 +26,7 @@ export default function Home() {
         <Grid container padding={3}>
           <Grid item xs={12} padding={2} textAlign="left">
             <Typography variant="h3" color="primary">
-              Drużyna
+              Poznaj naszych zawodników
             </Typography>
             <Divider />
           </Grid>

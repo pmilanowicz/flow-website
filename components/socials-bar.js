@@ -17,7 +17,7 @@ export default function SocialsBarComponent() {
 
     return (
         <Box sx={{ md: 'flex' }}>
-            <IconButton className={classes.iconButton} >
+            <IconButton className={classes.iconButton}>
                 <Link button="true" href="https://www.facebook.com/flow.ultimate.wroclaw" target="_blank">
                     <FacebookIcon color="secondary" className={classes.iconComponent} />
                 </Link>

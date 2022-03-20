@@ -21,13 +21,13 @@ export const MenuElements = [
         iconComponent: PeopleIcon
     },
     {
-        title: 'Partnerzy',
-        href: '/partnerzy',
+        title: 'Współpraca',
+        href: '/wspolpraca',
         iconComponent: BusinessCenterIcon
     },
-    {
-        title: 'Kontakt',
-        href: '/kontakt',
-        iconComponent: CallIcon
-    }
+    // {
+    //     title: 'Kontakt',
+    //     href: '/kontakt',
+    //     iconComponent: CallIcon
+    // }
 ];

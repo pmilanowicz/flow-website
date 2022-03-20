@@ -39,7 +39,7 @@ export default function Home() {
 
           <Grid container padding={2} columnSpacing={12}>
             <Grid item xs={12} lg={7}>
-              <Typography variant="h5" color="primary">
+              <Typography variant="h5" color="primary" marginBottom={1}>
                 Jesteśmy wrocławską drużyną ultimate
               </Typography>
               <Typography variant="body1" sx={{ lineHeight: 2 }} color="primary">
