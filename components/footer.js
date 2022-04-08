@@ -62,8 +62,8 @@ export default function Footer() {
                             51-672 Wrocław
                         </Typography>
                         <Typography variant="body2">
-                            <Link href="mailto:flowwroclaw@gmail.com" color="secondary">
-                                flowwroclaw@gmail.com
+                            <Link href="mailto:flow.ultimate.wroclaw@gmail.com" color="secondary">
+                                flow.ultimate.wroclaw@gmail.com
                             </Link>
                         </Typography>
                     </Grid>

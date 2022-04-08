@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Theme from '../../utils/theme';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import { Divider, Grid, Typography } from '@mui/material';
+import { Divider, Grid, Typography, Link, InputLabel, Input, FormHelperText, FormControl } from '@mui/material';
 import MainImage from '../../components/main-image';
 import ImageSrc from '../../public/images/kontakt.jpg';
+import EmailIcon from '@mui/icons-material/Email';
+import ContactForm from '../../components/contact-form';
 
 export default function Home() {
   return (
@@ -17,36 +19,48 @@ export default function Home() {
       <main>
         <Navbar />
         <MainImage imgSrc={ImageSrc} />
-        <Grid container padding={3}>
-          <Grid item xs={12} padding={2} textAlign="left">
-            <Typography variant="h3" color="primary">
-              Kontakt
-            </Typography>
+        <Grid container padding={3} alignItems="flex-start">
+          <Grid item xs={6} padding={2}>
+            <Typography variant="h3">Kontakt</Typography>
             <Divider />
           </Grid>
 
-          <Grid item xs={12} padding={2}>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
+          <Grid item xs={6} padding={2}>
+            <Typography variant="h3">Formularz kontaktowy</Typography>
+            <Divider />
           </Grid>
 
-          <Grid item xs={12} padding={2}>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
+          <Grid container xs={6} padding={2}>
+            <Grid item xs>
+              <EmailIcon fontSize="large" color="primary" />
+            </Grid>
+            <Grid item xs={11}>
+              <Typography variant="h5" color="primary">
+                <Link href="mailto:flow.ultimate.wroclaw@gmail.com">
+                  flow.ultimate.wroclaw@gmail.com
+                </Link>
+              </Typography>
+            </Grid>
+
+            <Grid item xs={12} marginTop={3}>
+              <Typography variant="h5" color="primary">
+                Klub Sportowy Flow Wrocław
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h5" color="primary">
+                ul. Partyzantów 19/2
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              <Typography variant="h5" color="primary">
+                51-672 Wrocław
+              </Typography>
+            </Grid>
           </Grid>
 
-          <Grid item xs={12} padding={2}>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} padding={2}>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </Typography>
+          <Grid item xs={6} padding={2}>
+            <ContactForm />
           </Grid>
         </Grid>
       </main>
