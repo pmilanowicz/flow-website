@@ -5,6 +5,7 @@ import TikTokIcon from "../public/images/tiktok-icon.svg";
 import { Icon, IconButton, Link } from "@mui/material";
 import { Box } from "@mui/system";
 import { makeStyles } from "@mui/styles";
+import socials from '../types/socials.json';
 
 const useStyles = makeStyles((theme) => ({
     iconButton: {
@@ -16,26 +17,26 @@ export default function SocialsBarComponent() {
     const classes = useStyles();
 
     return (
-        <Box sx={{ md: 'flex' }}>
+        <Box>
             <IconButton className={classes.iconButton}>
-                <Link button="true" href="https://www.facebook.com/flow.ultimate.wroclaw" target="_blank">
-                    <FacebookIcon color="secondary" className={classes.iconComponent} />
+                <Link button="true" href={socials.facebook} target="_blank">
+                    <FacebookIcon color="secondary" />
                 </Link>
             </IconButton>
             <IconButton className={classes.iconButton}>
-                <Link button="true" href="https://www.instagram.com/flow.ultimate.wroclaw" target="_blank">
-                    <InstagramIcon color="secondary" className={classes.iconComponent} />
+                <Link button="true" href={socials.instagram} target="_blank">
+                    <InstagramIcon color="secondary" />
                 </Link>
             </IconButton>
             <IconButton className={classes.iconButton}>
-                <Link button="true" href="https://www.youtube.com/channel/UC4VEw8F4FiY1qYOlajQtXGQ" target="_blank">
-                    <YouTubeIcon color="secondary" className={classes.iconComponent} />
+                <Link button="true" href={socials.youtube} target="_blank">
+                    <YouTubeIcon color="secondary" />
                 </Link>
             </IconButton>
             <IconButton className={classes.iconButton}>
-                <Link button="true" href="https://www.tiktok.com/@flowultimatewroclaw" target="_blank">
+                <Link button="true" href={socials.tiktok} target="_blank">
                     <Icon>
-                        <img src={TikTokIcon.src} height="24" width="24" />
+                        <img src={TikTokIcon.src} height="24" width="24" alt="TikTok social" />
                     </Icon>
                 </Link>
             </IconButton>

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import NextLink from "next/link";
 import { Box } from "@mui/system";
 import { MenuElements } from "../types/menu-elements";
+import { emailAddress } from "../types";
 
 const useStyles = makeStyles((theme) => ({
     logoBox: {
@@ -14,14 +15,14 @@ const useStyles = makeStyles((theme) => ({
             display: "none"
         }
     }
-}, { name: 'MuiFooterComponent' }));
+}));
 
 export default function Footer() {
     const classes = useStyles();
 
     return (
-        <Grid container padding={0} sx={{ mt: 5 }}>
-            <Grid item xs={12} textAlign="center">
+        <Grid container padding={0}>
+            <Grid item xs={12} textAlign="center" sx={{ mt: 5 }}>
                 <Box className={classes.logoBox}>
                     <NextLink href="/">
                         <a>
@@ -61,9 +62,9 @@ export default function Footer() {
                         <Typography variant="body2">
                             51-672 Wrocław
                         </Typography>
-                        <Typography variant="body2">
-                            <Link href="mailto:flowwroclaw@gmail.com" color="secondary">
-                                flowwroclaw@gmail.com
+                        <Typography variant="body2" noWrap>
+                            <Link href={`mailto:${emailAddress}`} color="secondary">
+                                {emailAddress}
                             </Link>
                         </Typography>
                     </Grid>

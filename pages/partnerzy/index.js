@@ -45,7 +45,7 @@ export default function Home() {
             <Divider />
           </Grid>
 
-          <Grid container xs={12} padding={2}>
+          <Grid container padding={2}>
             <Grid item xs={5} marginTop="auto" marginBottom="auto">
               <Typography variant="h6" color="primary">
                 Ultimate to jeden z niewielu sportów, w którym kobiety grają razem z mężczyznami na boisku (mixed)
@@ -63,7 +63,7 @@ export default function Home() {
             </Grid>
           </Grid>
 
-          <Grid container xs={12} padding={2}>
+          <Grid container padding={2}>
             <Grid item xs={5} marginTop="auto" marginBottom="auto">
               <Typography variant="h6" color="primary">
                 Ultimate to jedyny sport, w którym nie ma sędziów
@@ -81,7 +81,7 @@ export default function Home() {
             </Grid>
           </Grid>
 
-          <Grid container xs={12} padding={2}>
+          <Grid container padding={2}>
             <Grid item xs={5} marginTop="auto" marginBottom="auto">
               <Typography variant="h6" color="primary">
                 Ultimate jest bardzo popularne za oceanem i jesteśmy pewni, że ta moda z opóźnieniem rozwinie się w Polsce
@@ -106,14 +106,14 @@ export default function Home() {
           </Grid>
 
 
-          <Grid container xs={12} padding={2}>
+          <Grid container padding={2}>
             <Typography variant="body1" color="primary">
               Powyższe wartości to wartości gwarantowane, które otrzymujesz niezależnie od rodzaju współpracy jaki podejmiemy.<br />
               Po więcej szczegółów zapraszamy do zapoznania się z naszą <Link href="/docs/oferta-sponsorska.pdf" target="_blank">ofertę sponsorską.</Link>
             </Typography>
           </Grid>
 
-          <Grid container xs={12} padding={2}>
+          <Grid container padding={2}>
             <Link href="/docs/oferta-sponsorska.pdf" target="_blank">
               <Button variant="contained" endIcon={<FileDownloadIcon />}>
                 Pobierz ofertę

@@ -17,7 +17,7 @@ const createImageComponent = (imgSrc) => {
 }
 
 export const PlayerMediaCard = ({ imgSrc, name, nickname, number, position, yearOfJoining, yearOfBirth, funFact }) => {
-    const yearsOfPlaying = new Date().getFullYear() - yearOfJoining;
+    const yearsOfPlaying = new Date().getFullYear() - yearOfJoining + 1;
 
     let imageComponent = null;
     try {

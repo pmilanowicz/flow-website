@@ -6,7 +6,8 @@ import News from '../components/news';
 import PartnersBar from '../components/partners-bar';
 import Footer from '../components/footer';
 import FlowBanner from '../public/images/homepage.png';
-// import MainBar from '../components/main-bar';
+import MainBar from '../components/main-bar';
+// import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -15,11 +16,12 @@ export default function Home() {
         <title>Flow Wrocław - Ultimate Frisbee Team</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      {/*<div id="fb-root"></div>*/}
+      {/*<Script defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></Script>*/}
       <main>
         <Navbar />
         <MainImage imgSrc={FlowBanner}/>
-        {/* <MainBar /> */}
+         <MainBar />
         <News />
         <PartnersBar />
       </main>

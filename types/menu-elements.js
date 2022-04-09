@@ -25,9 +25,9 @@ export const MenuElements = [
         href: '/wspolpraca',
         iconComponent: BusinessCenterIcon
     },
-    // {
-    //     title: 'Kontakt',
-    //     href: '/kontakt',
-    //     iconComponent: CallIcon
-    // }
+    {
+        title: 'Kontakt',
+        href: '/kontakt',
+        iconComponent: CallIcon
+    }
 ];
