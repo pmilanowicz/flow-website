@@ -11,24 +11,27 @@ import MainBar from '../components/main-bar';
 
 export default function Home() {
   return (
-    <Theme>
+    <>
       <Head>
         <title>Flow Wrocław - Ultimate Frisbee Team</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/*<div id="fb-root"></div>*/}
-      {/*<Script defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></Script>*/}
-      <main>
-        <Navbar />
-        <MainImage imgSrc={FlowBanner}/>
-         <MainBar />
-        <News />
-        <PartnersBar />
-      </main>
 
-      <footer>
-        <Footer />
-      </footer>
-    </Theme>
+      <Theme>
+        {/*<div id="fb-root"></div>*/}
+        {/*<Script defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></Script>*/}
+        <main>
+          <Navbar />
+          <MainImage imgSrc={FlowBanner} />
+          <MainBar />
+          <News />
+          <PartnersBar />
+        </main>
+
+        <footer>
+          <Footer />
+        </footer>
+      </Theme>
+    </>
   )
 }
