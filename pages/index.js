@@ -7,24 +7,28 @@ import PartnersBar from '../components/partners-bar';
 import Footer from '../components/footer';
 import FlowBanner from '../public/images/homepage.png';
 import MainBar from '../components/main-bar';
-// import Script from 'next/script'
+import Script from 'next/script'
+import { getNewsIds } from '../utils/news-client';
+import { Fragment } from 'react';
 
-export default function Home() {
+function Home({ newsIds }) {
   return (
-    <>
+    <Fragment>
+      <div id="fb-root"></div>
+      <Script defer crossOrigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v13.0&appId=506909657758977&autoLogAppEvents=1" nonce="v8ct5Rpw"></Script>
+
       <Head>
         <title>Flow Wrocław - Ultimate Frisbee Team</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Theme>
-        {/*<div id="fb-root"></div>*/}
-        {/*<Script defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></Script>*/}
+
         <main>
           <Navbar />
           <MainImage imgSrc={FlowBanner} />
           <MainBar />
-          <News />
+          <News newsIds={newsIds} />
           <PartnersBar />
         </main>
 
@@ -32,6 +36,12 @@ export default function Home() {
           <Footer />
         </footer>
       </Theme>
-    </>
+    </Fragment>
   )
 }
+
+export async function getServerSideProps() {
+  return { props: { newsIds: await getNewsIds() } }
+}
+
+export default Home;
