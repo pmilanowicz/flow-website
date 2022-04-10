@@ -28,29 +28,29 @@ export default function Home() {
 
           <Grid item sm={12} md={6}>
             <Grid container padding={2} alignItems={"flex-start"}>
-              <Grid item marginRight={1}>
+              <Grid item marginRight={1} sx={{display: { xs: 'none', sm: 'block'}}}>
                 <EmailIcon fontSize="large" color="primary"/>
               </Grid>
               <Grid item>
-                <Typography variant="h5" color="primary">
-                  <Link href={`mailto:${emailAddress}`}>
+                <Typography variant="h6" color="primary" noWrap>
+                  <Link href={`mailto:${emailAddress}`} noWrap>
                     {emailAddress}
                   </Link>
                 </Typography>
               </Grid>
 
               <Grid item xs={12} marginTop={3}>
-                <Typography variant="h5" color="primary">
+                <Typography variant="h6" color="primary">
                   Klub Sportowy Flow Wrocław
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="h5" color="primary">
+                <Typography variant="h6" color="primary">
                   ul. Partyzantów 19/2
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="h5" color="primary">
+                <Typography variant="h6" color="primary">
                   51-672 Wrocław
                 </Typography>
               </Grid>
