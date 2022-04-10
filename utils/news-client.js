@@ -17,8 +17,8 @@ export const getNewsIds = async () => {
     }
 }
 
-const createIdsObjects = (data) => {
-    return data?.map(post => mapIds(post)) || [];
+const createIdsObjects = (payload) => {
+    return payload.data?.map(post => mapIds(post)) || [];
 }
 
 const mapIds = (post) => {
