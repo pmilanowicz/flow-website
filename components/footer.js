@@ -12,7 +12,7 @@ export default function Footer() {
     return (
         <Grid container padding={0}>
             <Grid item xs={12} textAlign="center" sx={{ mt: 5 }}>
-                <Box sx={{ display: { sm: "none", md: "block" } }}>
+                <Box sx={{ display: { xs: "none", md: "block" } }}>
                     <NextLink href="/">
                         <a>
                             <Image src={FlowLogo} width="150" height="150" />
