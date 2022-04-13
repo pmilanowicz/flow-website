@@ -12,13 +12,13 @@
             "name": "Ma\u0142gorzata Czapli\u0144ska",
             "position": "cutter",
             "number": 13,
-            "yearOfJoining": 2015,
+            "yearOfJoining": 2016,
             "yearOfBirth": 1998,
             "imgSrc": "number-13.png"
         },
         {
             "name": "Bart\u0142omiej Specja\u0142",
-            "position": "cutter\/handler",
+            "position": "handler",
             "number": 19,
             "yearOfJoining": 2011,
             "yearOfBirth": 1990,
@@ -42,9 +42,9 @@
         },
         {
             "name": "Andrzej Zar\u00f3d",
-            "position": "cutter\/handler",
+            "position": "cutter",
             "number": 49,
-            "yearOfJoining": 2020,
+            "yearOfJoining": 2021,
             "yearOfBirth": 2001,
             "imgSrc": "number-49.png"
         },
@@ -65,7 +65,7 @@
             "imgSrc": "number-3.png"
         },
         {
-            "name": "Zuzanna Brzezi\u0144ska",
+            "name": "Zuza Brzezi\u0144ska",
             "position": "cutter",
             "number": 26,
             "yearOfJoining": 2017,
@@ -73,7 +73,7 @@
             "imgSrc": "number-26.png"
         },
         {
-            "name": "Katarzyna Wid\u017agowska",
+            "name": "Kasia Wid\u017agowska",
             "position": "cutter",
             "number": 95,
             "yearOfJoining": 2021,
@@ -113,7 +113,7 @@
             "imgSrc": "number-72.png"
         },
         {
-            "name": "Dariusz Urbanik",
+            "name": "Darek Urbanik",
             "position": "handler",
             "number": 12,
             "yearOfJoining": 2011,
@@ -137,7 +137,7 @@
             "imgSrc": "number-32.png"
         },
         {
-            "name": "Aleksandra Milanowicz",
+            "name": "Ola Milanowicz",
             "position": "cutter",
             "number": 99,
             "yearOfJoining": 2013,
@@ -145,7 +145,7 @@
             "imgSrc": "number-99.png"
         },
         {
-            "name": "Gabriela Pisarczuk",
+            "name": "Gabi Pisarczuk",
             "position": "cutter",
             "number": 16,
             "yearOfJoining": 2018,
@@ -156,12 +156,12 @@
             "name": "Anna Jeziorska",
             "position": "cutter",
             "number": 8,
-            "yearOfJoining": 2020,
+            "yearOfJoining": 2021,
             "yearOfBirth": 2000,
             "imgSrc": "number-8.png"
         },
         {
-            "name": "Łukasz Dyda",
+            "name": "Łukasz Duda",
             "position": "cutter",
             "number": 73,
             "yearOfJoining": 2018,

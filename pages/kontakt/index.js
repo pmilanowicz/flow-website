@@ -22,7 +22,7 @@ export default function Home() {
         <MainImage imgSrc={ImageSrc}/>
         <Grid container padding={3} alignItems="flex-start">
           <Grid item xs={12} padding={2}>
-            <Typography variant="h3">Kontakt</Typography>
+            <Typography variant="h3" color="primary">Kontakt</Typography>
             <Divider/>
           </Grid>
 

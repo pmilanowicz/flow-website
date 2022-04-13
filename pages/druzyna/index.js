@@ -26,7 +26,7 @@ export default function Home() {
         <Grid container padding={3}>
           <Grid item xs={12} padding={2} textAlign="left">
             <Typography variant="h3" color="primary">
-              Poznaj naszych zawodników
+              Zawodnicy
             </Typography>
             <Divider />
           </Grid>

@@ -24,7 +24,7 @@ export default function Home() {
         <Grid container padding={3}>
           <Grid item xs={12} padding={2} textAlign="left">
             <Typography variant="h3" color="primary">
-              Twoja marka razem z Ultimate
+              Twoja marka razem z ultimate
             </Typography>
             <Divider />
           </Grid>
@@ -122,26 +122,8 @@ export default function Home() {
             </Link>
           </Grid>
 
-          <Grid item xs={12} padding={2} textAlign="left">
-            <Typography variant="h4" color="primary">Zapraszamy do kontaktu</Typography>
-            <Divider />
-
-            <Grid item xs={12} marginTop={2}>
-              <Typography variant="body1">
-                Klub Sportowy Flow Wrocław
-              </Typography>
-              <Typography variant="body2">
-                ul. Partyzantów 19/2
-              </Typography>
-              <Typography variant="body2">
-                51-672 Wrocław
-              </Typography>
-              <Typography variant="body2">
-                <Link href="mailto:flowwroclaw@gmail.com" color="primary">
-                  flowwroclaw@gmail.com
-                </Link>
-              </Typography>
-            </Grid>
+          <Grid item xs={12} padding={2} textAlign="center">
+            <Typography variant="h4" color="primary">Zapraszamy do kontaktu!</Typography>
           </Grid>
         </Grid>
       </main>

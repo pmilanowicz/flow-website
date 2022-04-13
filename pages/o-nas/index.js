@@ -1,4 +1,4 @@
-import { Divider, Grid, List, ListItemText, Typography } from '@mui/material';
+import { Divider, Grid, List, Link, ListItemText, Typography } from '@mui/material';
 import Head from 'next/head';
 import Image from 'next/image';
 import Footer from '../../components/footer';
@@ -45,7 +45,8 @@ export default function Home() {
               <Typography variant="body1" sx={{ lineHeight: 2 }} color="primary">
                 Pod nazwą Flow występujemy w rozgrywkach Mistrzostw Polski od 2011 roku. Od tego czasu barwy Flow reprezentowało już ponad 100 zawodników. <br /><br />
                 Aby walczyć o najwyższe cele, dwa razy w tygodniu spotykamy się na treningach drużynowych, a w pozostałe dni nasi zawodnicy trenują indywidualnie: siłowo, biegowo oraz rzutowo.<br /><br />
-                Od kilku sezonów jesteśmy postrzegani jako drużyna dominująca polską scenę Ultimate oraz jako faworyci do kolejnych tytułów mistrzowskich. Aktualnie staramy się mierzyć wyżej i nie zaprzestając walki o krajowe tytuły, przygotowujemy się do walki o tytuł Mistrza Europy.
+                Od kilku sezonów jesteśmy postrzegani jako drużyna dominująca polską scenę Ultimate oraz jako faworyci do kolejnych tytułów mistrzowskich. Aktualnie staramy się mierzyć wyżej i nie zaprzestając walki o krajowe tytuły, przygotowujemy się do walki o tytuł Mistrza Europy.<br /><br />
+                Przeczytaj o nas więcej na <strong><Link target="_blank" href="https://pl.wikipedia.org/wiki/Flow_Wroc%C5%82aw" color="primary">https://pl.wikipedia.org/wiki/Flow_Wrocław</Link></strong>
               </Typography>
             </Grid>
 
@@ -80,9 +81,9 @@ export default function Home() {
 
             <Grid item xs={12} sm={5} textAlign="center">
               <Typography variant="h5" color="primary">
-                Plażowy Mistrz Polski 
-              <Divider />
-              <Typography variant="body2" color="primary">(2015, 2021)</Typography>
+                Plażowy Mistrz Polski
+                <Divider />
+                <Typography variant="body2" color="primary">(2015, 2021)</Typography>
               </Typography>
             </Grid>
           </Grid>
@@ -93,16 +94,16 @@ export default function Home() {
             </Grid>
 
             <Grid item xs={12} sm={8} textAlign="center">
-              <Typography variant="h5" color="primary">
-                II na Mistrzostwach Polski <Typography variant="caption" color="primary">(2015)</Typography>
+              <Typography variant="h5" color="primary" marginBottom={1}>
+                II m-ce na Mistrzostwach Polski <Typography variant="body2" color="primary">(2015)</Typography>
               </Typography>
               <Divider />
-              <Typography variant="h5" color="primary">
-                II miejsce na Halowych MP <Typography variant="caption" color="primary">(2018, 2019)</Typography>
+              <Typography variant="h5" color="primary" marginBottom={1}>
+                II m-ce na Halowych MP <Typography variant="body2" color="primary">(2018, 2019)</Typography>
               </Typography>
               <Divider />
-              <Typography variant="h5" color="primary">
-                III miejsce na Halowych MP <Typography variant="caption" color="primary">(2020, 2022)</Typography>
+              <Typography variant="h5" color="primary" marginBottom={1}>
+                III m-ce na Halowych MP <Typography variant="body2" color="primary">(2020, 2022)</Typography>
               </Typography>
             </Grid>
 
@@ -115,6 +116,7 @@ export default function Home() {
             <Grid item xs={12} padding={2} textAlign="center">
               <Typography variant="h5" color="primary">
                 Finały Klubowych Mistrzostw Europy
+                <Divider />
                 <List>
                   {europeanFinals.map(final => (
                     <ListItemText>{final.year}, {final.city}: <b>{final.position} miejsce</b></ListItemText>
