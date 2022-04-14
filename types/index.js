@@ -1,1 +1,2 @@
-export const emailAddress = 'flow.ultimate.wroclaw@gmail.com';
+export const emailAddress = 'kontakt@flowwroclaw.pl';
+export const cooperationEmailAddress = 'wspolpraca@flowwroclaw.pl';

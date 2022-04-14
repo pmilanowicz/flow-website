@@ -8,7 +8,7 @@ import ImageSrc from '../../public/images/partnerzy.jpg';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import Button from '@mui/material/Button';
-import SocialsBarComponent from "../../components/socials-bar";
+import { cooperationEmailAddress } from '../../types';
 
 export default function Home() {
   return (
@@ -124,6 +124,11 @@ export default function Home() {
 
           <Grid item xs={12} padding={2} textAlign="center">
             <Typography variant="h4" color="primary">Zapraszamy do kontaktu!</Typography>
+            <Typography variant="h5" color="primary">
+              <Link href={`mailto:${cooperationEmailAddress}`} noWrap>
+                    {cooperationEmailAddress}
+                  </Link>
+              </Typography>
           </Grid>
         </Grid>
       </main>

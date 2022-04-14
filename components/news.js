@@ -17,7 +17,7 @@ export default function News({newsIds}) {
         <Divider/>
       </Grid>
 
-      <Grid id="newsContainer" container direction="row" justifyItems="left" justifyContent="left">
+      <Grid id="newsContainer" sx={{minHeight: '650px'}} container direction="row" justifyItems="left" justifyContent="left">
         {newsIds.map(ids =>
           <Grid item xs={12} md={6} lg={4} padding={1} key={ids.postId}>
             <div className="fb-post" data-href={`https://www.facebook.com/${ids.fanpageId}/posts/${ids.postId}`}></div>
