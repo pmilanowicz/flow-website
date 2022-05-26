@@ -21,7 +21,7 @@ export const getNewsIds = async () => {
 
 const createIdsObjects = (payload) => {
     return payload.data?.
-        filter(post => post.from.id === FLOW_FANPAGE_ID).
+        filter(post => post.from?.id === FLOW_FANPAGE_ID).
         slice(0, POSTS_ON_PAGE_LIMIT).
         map(post => mapIds(post)) || [];
 }
