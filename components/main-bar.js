@@ -11,7 +11,7 @@ export default function MainBar() {
           Zostań zawodnikiem lub zawodniczką Flow! <br />
           Więcej informacji na wydarzeniu<br /><br />
           <Button size="small" variant="contained" color="secondary"
-            href="https://www.facebook.com/events/468306045087768/471653434753029" target="_blank">Kliknij i dołącz
+            href="https://www.facebook.com/events/629844088698230/629844122031560" target="_blank">Kliknij i dołącz
           </Button>
         </Typography>
       </Grid>
