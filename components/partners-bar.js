@@ -31,7 +31,7 @@ export default function PartnersBar() {
                     </a>
                 </Grid>
                 <Grid item xs={6} padding={2} textAlign="center">
-                    <a href="https://wroclaw.dlastudenta.pl/" target="_blank">
+                    <a href="https://www.dlastudenta.pl/" target="_blank">
                         <Image src={DlaStudentaImage} height={139} />
                     </a>
                 </Grid>

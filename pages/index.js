@@ -20,6 +20,9 @@ function Home({ newsIds }) {
       <Head>
         <title>Flow Wrocław - Ultimate Frisbee Team</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Flow Wrocław to wielokrotni Mistrzowie Polski w ultimate frisbee w kategorii Mixed. Zapoznaj się z historią klubu, prezentacją graczy oraz możliwościami dołączenia do zespołu." />
+        <meta name="keywords" content="flow wrocław,flow,ultimate frisbee,frisbee,wrocław,dysk,kategoria mixed,sport,koedukacja" />
+        <meta name="robots" content="index,follow" />
       </Head>
 
       <Theme>
