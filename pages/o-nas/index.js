@@ -39,13 +39,15 @@ export default function Home() {
 
           <Grid container padding={2} columnSpacing={12}>
             <Grid item xs={12} lg={7}>
-              <Typography variant="h5" color="primary" marginBottom={1}>
-                Jesteśmy wrocławską drużyną ultimate
-              </Typography>
               <Typography variant="body1" sx={{ lineHeight: 2 }} color="primary">
-                Pod nazwą Flow występujemy w rozgrywkach Mistrzostw Polski od 2011 roku. Od tego czasu barwy Flow reprezentowało już ponad 100 zawodników. <br /><br />
-                Aby walczyć o najwyższe cele, dwa razy w tygodniu spotykamy się na treningach drużynowych, a w pozostałe dni nasi zawodnicy trenują indywidualnie: siłowo, biegowo oraz rzutowo.<br /><br />
-                Od kilku sezonów jesteśmy postrzegani jako drużyna dominująca polską scenę Ultimate oraz jako faworyci do kolejnych tytułów mistrzowskich. Aktualnie staramy się mierzyć wyżej i nie zaprzestając walki o krajowe tytuły, przygotowujemy się do walki o tytuł Mistrza Europy.<br /><br />
+                <strong>Flow Wrocław</strong> to drużyna reprezentująca Wrocław w ultimate frisbee w dywizji Mixed, która charakteryzuje się grą mężczyzn i kobiet jednocześnie. W ostatnim czasie klub przygotowuje się także do startu w drugich rozgrywkach w dywizji Open, która pomimo nazwy reprezentowana jest w większości przez mężczyzn.<br /><br />
+
+                Drużyna została założona w roku 2011 i od tej pory zdobyła liczna trofea na polskich i europejskich zawodach, będąc wielokrotnym medalistą i trzykrotnym Mistrzem Polski.<br /><br />
+
+                Od początku istnienia klubu w drużynie wystąpiło ponad 100 zawodników z polskiej sceny ultimate frisbee. Aktualnie członkami klubu są w większości młode i aktywne osoby (19-27 lat), które prowadzone są przez weteranów i byłych zawodników kadry Polski.<br /><br />
+                Oficjalne treningi odbywają się stale przez cały rok dwa razy w tygodniu, przy czym zawodnicy mają także ustalone i rozpisane indywidualne treningi w trakcie i po sezonie. Każdy trening skupia się nie tylko na treningach rzutowych i strategiach rozgrywki, ale są to także typowe treningi biegowe i siłowe. <br /><br />
+                Głównymi trenerami klubu są Maciej Pająk, Zuzanna Brzezińska i Paweł Milanowicz  – byli lub obecni reprezentanci kraju i jedni z najlepszych graczy ultimate w Polsce.<br /><br />
+                {/*Klub prowadzi także otwarte treningi klubu, które dostępne są dla wszystkich chętnych nauki gry w Ultimate Frisbee. Treningi odbywają się również dwa razy w tygodniu, a wszystkie informacje o otwartych treningach dostępne są TUTAJ.*/}
                 Przeczytaj o nas więcej na <strong><Link target="_blank" href="https://pl.wikipedia.org/wiki/Flow_Wroc%C5%82aw" color="primary">https://pl.wikipedia.org/wiki/Flow_Wrocław</Link></strong>
               </Typography>
             </Grid>
@@ -96,6 +98,10 @@ export default function Home() {
             <Grid item xs={12} sm={8} textAlign="center">
               <Typography variant="h5" color="primary" marginBottom={1}>
                 II m-ce na Mistrzostwach Polski <Typography variant="body2" color="primary">(2015)</Typography>
+              </Typography>
+              <Divider />
+              <Typography variant="h5" color="primary" marginBottom={1}>
+                III m-ce na Mistrzostwach Polski <Typography variant="body2" color="primary">(2022)</Typography>
               </Typography>
               <Divider />
               <Typography variant="h5" color="primary" marginBottom={1}>
